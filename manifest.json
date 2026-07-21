@@ -2,7 +2,8 @@
   "name": "CyberCypher",
   "short_name": "CyberCypher",
   "description": "Interactive cyberpunk web component hub with sandbox editor, code export, and AI-powered palette synthesis.",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "lang": "en",
   "dir": "auto",
@@ -11,7 +12,7 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "/icons/icon.svg",
+      "src": "./icons/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
@@ -21,12 +22,12 @@
   "shortcuts": [
     {
       "name": "Neon Button",
-      "url": "/?asset=neon-btn",
+      "url": "./?asset=neon-btn",
       "description": "Open the Neon Glow Button asset"
     },
     {
       "name": "Palette Creator",
-      "url": "/",
+      "url": "./",
       "description": "Create custom neon themes"
     }
   ]

@@ -1,5 +1,5 @@
-const CACHE_NAME = 'cybercypher-v1';
-const PRECACHE_URLS = ['/', '/index.html', '/manifest.json'];
+const CACHE_NAME = 'cybercypher-v2';
+const PRECACHE_URLS = ['./', './index.html', './manifest.json', './icons/icon.svg'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
