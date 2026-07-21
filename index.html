@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#07070a" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
-    <link rel="icon" type="image/x-icon" href="https://github.com/qamotech/ccypher/blob/main/favicon.ico">
     <title>CyberCypher // Interactive Asset Hub</title>
     <script type="module" crossorigin>(function(){const M=document.createElement("link").relList;if(M&&M.supports&&M.supports("modulepreload"))return;for(const U of document.querySelectorAll('link[rel="modulepreload"]'))d(U);new MutationObserver(U=>{for(const H of U)if(H.type==="childList")for(const K of H.addedNodes)K.tagName==="LINK"&&K.rel==="modulepreload"&&d(K)}).observe(document,{childList:!0,subtree:!0});function O(U){const H={};return U.integrity&&(H.integrity=U.integrity),U.referrerPolicy&&(H.referrerPolicy=U.referrerPolicy),U.crossOrigin==="use-credentials"?H.credentials="include":U.crossOrigin==="anonymous"?H.credentials="omit":H.credentials="same-origin",H}function d(U){if(U.ep)return;U.ep=!0;const H=O(U);fetch(U.href,H)}})();var _f={exports:{}},Gn={};/**
  * @license React
@@ -224,7 +223,7 @@ Error generating stack: `+a.message+`
   perspective: 1000px;
 }
 .glass-card-demo:hover {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5),
               0 0 35px rgba(${rl(h.glowColor)}, 0.25);
   border-color: rgba(${rl(h.glowColor)}, 0.4);
 }
@@ -272,20 +271,20 @@ if (card) {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    
+
     const px = (x / rect.width) * 100;
     const py = (y / rect.height) * 100;
     card.style.setProperty('--mx', px + '%');
     card.style.setProperty('--my', py + '%');
-    
+
     const cx = rect.left + rect.width / 2;
     const cy = rect.top + rect.height / 2;
     const rotX = -((e.clientY - cy) / (rect.height / 2)) * maxTilt;
     const rotY = ((e.clientX - cx) / (rect.width / 2)) * maxTilt;
-    
+
     card.style.transform = 'rotateX(' + rotX + 'deg) rotateY(' + rotY + 'deg)';
   });
-  
+
   card.addEventListener('mouseleave', () => {
     card.style.transform = 'rotateX(0deg) rotateY(0deg)';
     card.style.setProperty('--mx', '50%');
@@ -526,15 +525,15 @@ const btn = document.getElementById('demoMagBtn');
 
 if (container && btn) {
   const pullFactor = ${h.pull};
-  
+
   container.addEventListener('mousemove', (e) => {
     const rect = container.getBoundingClientRect();
     const x = e.clientX - (rect.left + rect.width / 2);
     const y = e.clientY - (rect.top + rect.height / 2);
-    
+
     btn.style.transform = 'translate(' + (x * pullFactor) + 'px, ' + (y * pullFactor) + 'px)';
   });
-  
+
   container.addEventListener('mouseleave', () => {
     btn.style.transform = 'translate(0px, 0px)';
   });
@@ -581,7 +580,7 @@ if (container && btn) {
       min-height: 100vh;
       overflow: hidden;
     }
-    
+
     /* Component CSS Styles */
     ${Va}
   </style>
@@ -610,7 +609,7 @@ if (container && btn) {
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(() => {});
+          navigator.serviceWorker.register('./sw.js').catch(() => {});
         });
       }
     </script>

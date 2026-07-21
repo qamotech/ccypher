@@ -1,0 +1,6 @@
+{
+  "name": "CyberCypher",
+  "description": "An interactive cyberpunk-themed web component and asset hub featuring responsive previews, a sandbox editor, a syntax-highlighted code exporter, and dynamic palette synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

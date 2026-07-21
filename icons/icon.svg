@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">CyberCypher</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00f3ff"/>
+      <stop offset="1" stop-color="#ff00d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#07070a"/>
+  <path d="M365 146a154 154 0 1 0 0 220l-51-52a82 82 0 1 1 0-116z" fill="none" stroke="url(#g)" stroke-width="38" stroke-linejoin="round"/>
+  <path d="m255 111 26 54 59 9-43 42 10 59-52-28-53 28 10-59-43-42 60-9z" fill="url(#g)"/>
+</svg>
